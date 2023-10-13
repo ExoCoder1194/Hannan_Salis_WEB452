@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CLAMP_Assignment1.Models.Clamp>
+
+<h1>Clamp Products</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Material</th>
+            <th>Size</th>
+            <th>Type</th>
+            <th>Maximum Opening Width</th>
+            <th>Load Capacity</th>
+            <th>Price</th>
+            <th>Customer Review</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var clamp in Model)
+        {
+            <tr>
+                <td>@clamp.Material</td>
+                <td>@clamp.Size</td>
+                <td>@clamp.Type</td>
+                <td>@clamp.MaximumOpeningWidth inches</td>
+                <td>@clamp.LoadCapacity lbs</td>
+                <td>@String.Format("{0:C}", clamp.Price)</td>
+                <td>@clamp.CustomerReview stars</td>
+            </tr>
+        }
+    </tbody>
+</table>

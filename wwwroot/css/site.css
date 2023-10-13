@@ -1,0 +1,54 @@
+﻿body {
+    background: linear-gradient(45deg, #FF5733, #33FF57, #3357FF);
+    background-size: 600% 600%;
+    animation: Gradient 15s infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body, h1, h2, h3, h4, h5, h6, nav, footer {
+    font-family: 'Autour One', sans-serif;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+   
+}
+
+.clampMate-logo {
+    display: block; 
+    margin: 20px auto; 
+    width: 70%; 
+    max-width: 500px;
+    border: 5px solid #333; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
